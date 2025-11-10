@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Language Activity</title>
+    <!-- Carrega o Tailwind CSS (para o estilo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega a fonte "Inter" (moderna e legível) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Um fundo sutil com padrão de pontos para dar uma textura leve */
+        body {
+            background-color: #f8fafc; /* bg-slate-50 */
+            background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px);
+            background-size: 15px 15px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="min-h-screen flex items-center justify-center p-4">
+        
+        <!-- Cartão principal que segura o conteúdo -->
+        <div class="bg-white w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden my-8">
+            
+            <!-- Cabeçalho Temático -->
+            <div class="p-8 sm:p-10 bg-blue-700 text-white">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold">English Challenge!</h1>
+                        <p class="text-lg text-blue-100 mt-1">Word Search & Activities</p>
+                    </div>
+                    <!-- Ícone de livro (representando estudo) -->
+                    <div class="text-blue-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-check">
+                            <path d="M8 3H21a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+                            <path d="M4 6V20a2 2 0 0 0 2 2h14"/>
+                            <path d="m16 13 1.3 1.3a1 1 0 0 0 1.4-1.4L16 11l-1.7 1.7a1 1 0 0 0 1.4 1.4L16 13z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instruções -->
+            <div class="p-8 sm:p-10">
+                <h2 class="text-2xl font-semibold text-gray-900">Let's get started!</h2>
+                <p class="text-gray-600 mt-2 text-base md:text-lg">
+                    Please fill out the form below carefully. Your responses will be sent directly to your teacher.
+                    <br>
+                    (Por favor, preencha o formulário abaixo com atenção. Suas respostas serão enviadas diretamente ao seu professor.)
+                </p>
+                <p class="text-gray-600 mt-2 text-base md:text-lg">
+                    Good luck! (Boa sorte!) 
+                </p>
+            </div>
+
+            <!-- Linha divisória -->
+            <hr class="border-gray-200">
+
+            <!-- Seção do Google Form (AQUI É ONDE A MÁGICA ACONTECE) -->
+            <div class="p-4 sm:p-8 bg-gray-50">
+                
+                <!--
+                    !!!! INSTRUÇÃO IMPORTANTE !!!!
+                    Substitua o link de exemplo em "src" (abaixo) pelo link "Incorporar HTML" (Embed) do SEU Google Form.
+                    Você o encontra no Google Forms em: "Enviar" > ícone "< >" (Incorporar) > Copiar.
+                    APENAS copie o link que está dentro de src="..." e cole abaixo.
+                -->
+                <div class="w-full h-[600px] md:h-[750px] rounded-lg overflow-hidden border-2 border-gray-300 shadow-inner">
+                    <iframe 
+                        src="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrM6SZqSb5kkDvvetM8RIpxemh1XOdR5JzRI6mhLlUqja8Qw/viewform?embedded=true" width="640" height="2912" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Carregando…
+                    </iframe>
+                </div>
+                <!-- Fim da área do iframe -->
+
+            </div>
+            
+            <!-- Rodapé -->
+            <footer class="p-6 bg-gray-100 border-t border-gray-200 text-center">
+                <p class="text-sm text-gray-500">This page is an activity for the English class.</p>
+            </footer>
+
+        </div>
+        <!-- Fim do Cartão principal -->
+
+    </div>
+
+</body>
+</html>
